@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Desapareciendo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        #ninjas {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        img {
+            width: 300px;
+            height: 300px;
+            border: 1px black solid;
+            padding: 15px;
+        }
+        
+        button {
+            background-color: chartreuse;
+            margin: 20px;
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('img.ninja1').click(function() {
+                $('img.ninja1').hide()
+            })
+            $('img.ninja2').click(function() {
+                $('img.ninja2').hide()
+            })
+            $('img.ninja3').click(function() {
+                $('img.ninja3').hide()
+            })
+            $('img.ninja4').click(function() {
+                $('img.ninja4').hide()
+            })
+            $('img.ninja5').click(function() {
+                $('img.ninja5').hide()
+            })
+            $('img.ninja6').click(function() {
+                $('img.ninja6').hide()
+            })
+            $('img.ninja7').click(function() {
+                $('img.ninja7').hide()
+            })
+            $('img.ninja8').click(function() {
+                $('img.ninja8').hide()
+            })
+            $('button').click(function() {
+                $('img.show').show()
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <div id="ninjas">
+        <img class="ninja1 show" src="ninja.jpg" alt="Ninja">
+        <img class="ninja2 show" src="ninja2.jpg" alt="Ninja">
+        <img class="ninja3 show" src="ninja3.jpg" alt="Ninja">
+        <img class="ninja4 show" src="ninja4.jpg" alt="Ninja">
+        <img class="ninja5 show" src="ninja5.jpg" alt="Ninja">
+        <img class="ninja6 show" src="ninja6.jpg" alt="Ninja">
+        <img class="ninja7 show" src="ninja7.jpg" alt="Ninja">
+        <img class="ninja8 show" src="ninja8.jpg" alt="Ninja">
+    </div>
+    <button>Restore</button>
+</body>
+
+</html>
